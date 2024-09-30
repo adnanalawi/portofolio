@@ -2,17 +2,43 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-
 def prediksi():
     with open('streamlit/pipeline.pkl', 'rb') as file:
         pipeline = pickle.load(file)
 
- 
+    st.markdown("""
+    <style> .main > div {
+        padding-left: 12rem;
+        padding-right: 12rem;
+        }
+        </style> """, unsafe_allow_html=True)
+    
     st.title("Logistic Regression Prediction")
+    st.markdown("")
+
+    st.markdown('''
+                <div> 
+                <div style='text-align: justify;'>
+                <p style="font-family: monospace; font-size: 14px; ">
+                <style>
+                [data-testid="stMarkdownContainer"] ul{
+                padding-left:15px;
+                }
+                </style>
+                
+                Model prediksi menggunakan algoritma Logistic Regression yang dilatih dengan menggunakan dataset
+                [Bank Marketing](https://archive.ics.uci.edu/dataset/222/bank+marketing), bertujuan untuk memprediksi 
+                apakah seorang klien akan berlangganan deposito bank berjangka berdasarkan beberapa informasi pribadi dan finansial.
+                
+                </p>
+                </div>
+                ''', unsafe_allow_html=True
+        
+        )
     
     # Membuat input_number kosong
     age = st.number_input("Masukkan umur:", min_value=0, max_value=80, value=None)
-    balance = st.number_input("Jumlah Saldo Rekening:", min_value=0, max_value=100000, value=None)
+    balance = st.number_input("Jumlah Saldo Rekening (dollar):", min_value=0, max_value=100000, value=None)
 
     # Menambahkan elemen kosong pada selectbox
     job = st.selectbox("Pekerjaan (job):", 
