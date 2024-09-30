@@ -2,7 +2,7 @@ import streamlit as st
 
 def cv():
     st.title("ADNAN ALAWI")
-    st.text("adnan.alawi46@gmail.com"  " |"  "linkedin.com/in/adnanalawi"  "|"  "github.com/adnanalawi/portofolio")
+    st.text("adnan.alawi46@gmail.com"  " |"  "linkedin.com/in/adnanalawi")
     
 
     st.subheader("About")
