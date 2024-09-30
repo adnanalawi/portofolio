@@ -233,9 +233,8 @@ def portfolio():
     # Render the table with justifying text
     st.markdown(df.to_html(index=False, escape=False), unsafe_allow_html=True)
     
-    
     st.subheader("Result")
-        segmen = {
+    segmen = {
         'Segmentation' : ['Betrayers', 'Lost', 'Tail', 'Frustrated', 'New', 'Stars'],
         'Total User': ['21,710', '11,226', '8,172', '318', '103', '52' ],
         'Avg Recency' : ['86.8', '239.1', '380.9', '224.2', '356.5', '66.1'],
