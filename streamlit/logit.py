@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def prediksi():
-    with open('pipeline.pkl', 'rb') as file:
+    with open('https://github.com/adnanalawi/portofolio/blob/main/streamlit/pipeline.pkl', 'rb') as file:
         pipeline = pickle.load(file)
 
  
