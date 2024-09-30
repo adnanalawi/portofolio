@@ -1,7 +1,7 @@
 from cv import cv
 from portfolio import portfolio
 from dashboard import dashboard
-from addition import addition
+#from addition import addition
 from sidebar import sidebar    
 from logit import prediksi
 
