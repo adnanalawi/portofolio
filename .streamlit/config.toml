@@ -1,2 +1,20 @@
 [theme]
 base = "light"
+# Warna utama
+primaryColor = "#007bff"  # Warna biru (seperti yang digunakan dalam ikon)
+# Warna latar belakang aplikasi
+backgroundColor = "#f0f2f6"  # Warna latar belakang yang sama dengan sidebar
+# Warna latar belakang sekunder
+secondaryBackgroundColor = "#ffffff"  # Warna putih untuk elemen lain
+# Warna teks
+textColor = "#262730"  # Warna teks default
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[layout]
+# Gunakan layout lebar untuk sidebar yang responsif
+layout = "wide"
