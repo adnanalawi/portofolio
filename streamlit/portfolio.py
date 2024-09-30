@@ -235,3 +235,21 @@ def portfolio():
     
     
     st.subheader("Result")
+        segmen = {
+        'Segmentation' : ['Betrayers', 'Lost', 'Tail', 'Frustrated', 'New', 'Stars'],
+        'Total User': ['21,710', '11,226', '8,172', '318', '103', '52' ],
+        'Avg Recency' : ['86.8', '239.1', '380.9', '224.2', '356.5', '66.1'],
+        'Avg Frequency': ['2.04', '1.6', '1.5', '5.5', '4.2', '9.2'],
+        'Avg Monetary': ['121.3', '97.4', '85.8', '325.1', '480.07', '641.3']
+        
+    }
+
+    table_1 = pd.DataFrame(segmen)
+
+    # Render the DataFrame as an HTML table
+    st.markdown("""
+    <div style="display: inline-block; width: auto;">
+        {}
+    </div>
+    """.format(table_1.to_html(index=False)), unsafe_allow_html=True)
+
