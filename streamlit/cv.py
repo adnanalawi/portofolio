@@ -61,7 +61,7 @@ def cv():
                 </style>
                 
                 **MSIB Studi Independen** | Data Science (Feb 2024 - June 2024)
-                - Lean SQL, Python, Deployment, etc.
+                - Learn SQL, Python, Deployment, etc.
                 - Learn and creating an interactive dashboard using Tableau
                 - Learn traditional machine learning methods (classification, regression, clustering), time series. 
                 
