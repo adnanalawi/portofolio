@@ -117,7 +117,6 @@ def cv():
         </style>
         
         **Institut Teknologi Bandung** | Industrial Engineer
-        - GPA: 2,69
         - Thesis: Proposed Workstation Improvement Using Gang Process Chart and a Mathematical Model Approach In 
         the Jellygum Product Packaging Line at PT Makmur Artha Sejahtera
         - Related Course : Database System, Probability and Statistics, Data Analytics, and Data Science (at MSIB Studi Independen)
